@@ -1,0 +1,38 @@
+ body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      text-align: center;
+      width: 360px;
+    }
+    h2 {
+      margin-bottom: 25px;
+      color: #0a2f5c;
+      font-size: 26px;
+    }
+    .menu-btn {
+      display: block;
+      padding: 14px;
+      margin: 12px 0;
+      background: #ffc107;   /* Yellow */
+      color: #0a2f5c;        /* Navy text */
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .menu-btn:hover {
+      background: #f7941d;   /* Orange on hover */
+      color: #fff;
+    }

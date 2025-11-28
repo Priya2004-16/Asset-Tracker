@@ -1,0 +1,167 @@
+  .branch-box {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-height: 180px;
+  overflow-y: auto;
+  background: #fff;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two-column layout for compactness */
+  gap: 6px 12px;
+  align-items: start;
+}
+
+/* Each checkbox row becomes a horizontal flex block, without extra vertical gap */
+.branch-box .branch-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 4px;
+  font-size: 0.95rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* Make the select-all row span full width and visually separate it */
+.branch-box .select-all-row {
+  grid-column: 1 / -1;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+/* Style checkboxes to align with text and match accent color */
+.branch-box input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex: 0 0 auto;
+  accent-color: #f5a623; /* modern browsers will use this */
+  cursor: pointer;
+}
+
+/* Make the Select All label slightly bolder */
+.branch-box .select-all-row label {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #222;
+}
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f5a623;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      width: 700px;
+      background: rgba(255, 255, 255, 0.97);
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+      border: 1px solid #eee;
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .lab-illustration {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .lab-illustration img {
+      width: 90px;
+      height: 90px;
+      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
+    }
+
+    label {
+      font-weight: 500;
+      display: block;
+      margin: 0.8rem 0 0.3rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.9rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    input:focus {
+      border-color: #f5a623;
+      outline: none;
+      box-shadow: 0 0 10px rgba(245,166,35,0.4);
+    }
+
+    .system-count {
+      font-weight: bold;
+      color: #d35400;
+      margin-bottom: 0.5rem;
+    }
+
+    .preview-panel {
+      background: #fff5e5;
+      border-left: 5px solid #f5a623;
+      padding: 1rem 1.2rem;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .tracking-badge {
+      display: none;
+      text-align: center;
+      margin-top: 1.5rem;
+      padding: 0.6rem;
+      background: #e6ffe6;
+      border: 1px solid #2ecc71;
+      color: #2ecc71;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    button {
+      display: inline-block;
+      width: 100%;
+      padding: 1rem;
+      background: #f5a623;
+      color: white;
+      font-size: 1.05rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+      background: #e59400;
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+        padding: 1.5rem;
+      }
+    }

@@ -1,0 +1,172 @@
+body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: white;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      width: 50px;
+    }
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s;
+    }
+    .nav a.active, .nav a:hover {
+      background: #f5a623;
+      color: white;
+      border-radius: 5px;
+    }
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+    .left-side {
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+    .left-side h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .left-side p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+    /* Register Button Style */
+    .register-btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: #f5a623;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      margin-top: 1rem;
+    }
+    .register-btn:hover {
+      background: #e59400;
+    }
+    .right-side {
+      flex: 1 1 400px;
+      max-width: 500px;
+      text-align: center;
+    }
+    .right-side img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+  footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f8f8f8;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* New Sections CSS */
+    .info-section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .info-section p {
+      max-width: 800px;
+      margin: auto;
+      color: #555;
+    }
+    .info-section img {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .feature-card {
+      flex: 1 1 250px;
+      max-width: 300px;
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .feature-card i {
+      font-size: 2rem;
+      color: #f5a623;
+      margin-bottom: 1rem;
+    }
+    .feature-card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+    .unique-section {
+      padding: 2rem;
+      background: #f4f4f4;
+    }
+    .unique-section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .unique-points {
+      list-style: none;
+      max-width: 800px;
+      margin: auto;
+      padding: 0;
+    }
+    .unique-points li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .unique-points img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    .key-features-title {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 900px) {
+      .main {
+        flex-direction: column;
+      }
+    }

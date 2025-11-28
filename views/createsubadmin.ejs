@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel – Sub Admin Creation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/stylesheets/createsubadmin.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2><span>👨‍💼</span> Admin – Create Sub Admin</h2>
+    
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" placeholder="Enter full name" />
+
+    <label for="email">Sub Admin Email</label>
+    <input type="email" id="email" placeholder="Enter email" />
+    
+    <button onclick="generateAndStore()">Generate Credentials</button>
+
+    <div class="output" id="output">
+      <p><strong>Full Name:</strong> <span id="outFullname"></span></p>
+      <p><strong>Email (Username):</strong> <span id="uname"></span></p>
+      <p><strong>Password:</strong> <span id="pwd"></span></p>
+    </div>
+
+    <div class="user-list" id="userList">
+      <h3>🧑‍💻 Stored Sub Admins:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+    </div>
+
+    <a class="back-link" href="/adminLogin">← Back to Login</a>
+  </div>
+
+  <script src="/javascripts/createsubadmin.js"></script>
+</body>
+</html>

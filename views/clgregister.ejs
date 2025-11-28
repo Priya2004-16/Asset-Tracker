@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Registration - Lab Asset Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/stylesheets/clgregister.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="lab-illustration">
+      <img src="https://cdn-icons-png.flaticon.com/512/3159/3159310.png" alt="Lab Icon">
+    </div>
+
+    <h2>College Registration</h2>
+    <p class="subtitle">Set up your institution in the Lab Asset Tracker 🚀</p>
+    
+    <!-- ✅ FIXED FORM -->
+    <form id="registerForm" action="/register" method="POST">
+
+      <label for="collegeName">College Name</label>
+      <input type="text" id="collegeName" name="collegeName" required>
+
+      <label for="email">College Email ID</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- ✅ FIXED BRANCH CHECKBOXES (added name="branches") -->
+      <div class="branch-box" id="branchBox">
+        <div class="select-all-row">
+          <label for="branches"><strong>Branches</strong></label>
+          <label><input type="checkbox" id="selectAll"> <span>Select All</span></label>
+        </div>
+
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="CSE"> CSE</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="ISE"> ISE</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="ECE"> ECE</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="EEE"> EEE</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="MECH"> Mechanical</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="CIVIL"> Civil</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="IT"> IT</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="AIML"> AI & ML</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="IOT"> IoT</label>
+        <label class="branch-row"><input type="checkbox" class="branch" name="branches" value="DS"> Data Science</label>
+      </div>
+
+      <label for="labs">Number of Labs</label>
+      <input type="number" id="labs" name="labs" required>
+
+      <label for="systems">Systems per Lab</label>
+      <input type="number" id="systems" name="systems" required>
+      <div class="system-count" id="systemCount"></div>
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" required>
+
+      <label for="district">District</label>
+      <input type="text" id="district" name="district" required>
+
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" required>
+
+      <label for="contact">Contact Number</label>
+      <input type="tel" id="contact" name="contact" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="preview-panel" id="previewPanel">
+      <strong>Live Preview:</strong>
+      <div id="previewContent">Start filling the form to see details...</div>
+    </div>
+
+    <div class="tracking-badge" id="trackingBadge">
+      ✅ All details ready for asset tracking!
+    </div>
+  </div>
+
+  <script src="/javascripts/clgregister.js"></script>
+
+</body>
+</html>

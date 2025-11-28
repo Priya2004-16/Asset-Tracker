@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+   <link href="/stylesheets/adminlogin.css" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Admin Login</h2>
+    <input type="email" id="email" placeholder="Email ID" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="login()">Login</button>
+    <button class="forgot" onclick="forgotPassword()">Forgot Password?</button>
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="/javascripts/adminlogin.js"></script>
+
+</body>
+</html>

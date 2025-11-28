@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Staff Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="/stylesheets/staffinfo.css" rel="stylesheet">
+</head>
+<body>
+  <h2>👥 Staff Details</h2>
+
+  <table id="staffTable">
+    <thead>
+      <tr>
+  <th>Full Name</th>
+  <th>Email</th>
+  <th>Password</th>
+  <th>Lab</th> <!-- NEW -->
+  <th>Actions</th>
+</tr>
+
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="userAssets">
+    <h3>📦 Assets managed by <span id="assetUserName"></span></h3>
+    <ul id="assetList"></ul>
+  </div>
+
+  <div id="assetDetails">
+    <h3>📜 Asset History: <span id="assetIdTitle"></span></h3>
+    <table id="assetHistoryTable">
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Lab</th>
+          <th>Dept</th>
+          <th>User</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+<script src="/javascripts/staffinfo.js"></script>
+</body>
+</html>

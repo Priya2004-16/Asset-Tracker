@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab Asset Tracker - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="/stylesheets/userlogin.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header-icon">🔐</div>
+    <h2>Lab Asset Tracker Login</h2>
+    <form id="loginForm">
+      <label for="loginUser">👤 Username</label>
+      <input type="text" id="loginUser" required placeholder="Enter your username" />
+
+      <label for="loginPass">🔑 Password</label>
+      <input type="password" id="loginPass" required placeholder="Enter your password" />
+
+      <button  type="button" onclick="Login()">Login</button>
+    </form>
+    <p id="loginMsg" class="message"></p>
+  </div>
+
+  <script src="/javascripts/userlogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+:root {
+      --primary-color: #0083b0;
+      --primary-dark: #0083b0;
+      --bg-light: #f9f9fc;
+      --text-dark: #222;
+      --input-bg: #fffdfa;
+      --box-shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fffbe6, #f0f5ff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 14px;
+      width: 360px;
+      box-shadow: 0 10px 25px var(--box-shadow);
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    .container:hover {
+      transform: translateY(-4px);
+    }
+
+    .header-icon {
+      font-size: 48px;
+      color: var(--primary-dark);
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px 0 25px;
+      font-size: 26px;
+      color: var(--text-dark);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background-color: var(--input-bg);
+      transition: 0.3s ease;
+      font-size: 15px;
+    }
+
+    input:focus {
+      border-color: var(--primary-color);
+      outline: none;
+      background-color: #fffef5;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 22px;
+      padding: 12px;
+      background-color: var(--primary-color);
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--primary-dark);
+      color: #fff;
+    }
+
+    .message {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    .error-message {
+      color: #e74c3c;
+    }
+
+    .success-message {
+      color: #2ecc71;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        width: 90%;
+        padding: 30px 20px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }

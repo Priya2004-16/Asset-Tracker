@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab Asset Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+  <link href="/stylesheets/assetinfo.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>🔗 Blockchain-Inspired Lab Asset Tracker</h2>
+    <form>
+      <div>
+        <label for="assetId">Asset ID:</label>
+        <input type="text" id="assetId" placeholder="e.g., LAPTOP-007" />
+      </div>
+
+      <div>
+        <label for="labs">Lab:</label>
+        <select id="labs"></select>
+      </div>
+
+      <div>
+        <label for="dept">Department:</label>
+        <select id="dept"></select>
+      </div>
+
+      <!-- 🔒 Auto filled by logged in user -->
+      <div>
+        <label for="user">User:</label>
+        <select id="user" disabled></select>
+        <input type="hidden" id="userIdHidden" />
+      </div>
+
+      <div>
+        <label for="action">Action:</label>
+        <select id="action">
+          <option value="Added">Add</option>
+          <option value="Issued">Issue</option>
+          <option value="Returned">Return</option>
+          <option value="Repaired">Repair</option>
+          <option value="Decommissioned">Decommission</option>
+        </select>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" onclick="addTransaction()">➕ Submit Transaction</button>
+        <button type="button" onclick="downloadLedger()">📥 Download Ledger (CSV)</button>
+        <button type="button" onclick="verifyLedger()">🔍 Verify Ledger</button>
+      </div>
+    </form>
+
+    <h3>📦 Asset Chain Ledger</h3>
+    <div id="ledgerContainer"></div>
+    <p id="verificationResult"></p>
+  </div>
+
+  <script src="/javascripts/tracker.js"></script>
+</body>
+</html>

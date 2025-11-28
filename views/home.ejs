@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= collegeName %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+   <link href="/stylesheets/home.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1><%= collegeName %></h1>
+      <p>Empowering Students for a Brighter Future</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+  </nav>
+
+  <section class="content">
+    <div class="card reveal">
+      <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Principal Icon">
+      <h2>Admin Portal</h2>
+      <p>The main control panel for the admin to monitor and manage academic operations.</p>
+      <a href="/adminlogin">Enter as Admin</a>
+    </div>
+
+    <div class="card reveal">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Sub Admin Icon">
+      <h2>Sub Admin Portal</h2>
+      <p>Dedicated panel for sub admins to assist in departmental and academic administration.</p>
+      <a href="/subadminlogin">Enter as Sub Admin</a>
+    </div>
+
+    <div class="card reveal">
+      <img src="https://cdn-icons-png.flaticon.com/512/2922/2922522.png" alt="Staff Icon">
+      <h2>Staff Portal</h2>
+      <p>Used by lab and teaching staff to input lab data, manage equipment, and view updates.</p>
+      <a href="/userlogin">Enter as Staff</a>
+    </div>
+  </section>
+  <footer>
+  &copy; 2025 <%= collegeName %>. All rights reserved.
+</footer>
+ 
+  <script src="/javascripts/home.js"></script>
+
+</body>
+</html>  

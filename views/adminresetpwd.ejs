@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reset Password</title>
+<link href="/stylesheets/adminresetpwd.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Reset Password (OTP Method)</h2>
+
+  <input type="email" id="email" placeholder="Enter Email" required>
+  <button onclick="sendOtp()">Send OTP</button>
+
+  <input type="text" id="otp" placeholder="Enter OTP" required>
+  <input type="password" id="newpassword" placeholder="New Password" required>
+
+  <button onclick="resetPassword()">Reset Password</button>
+</div>
+
+
+<script src="/javascripts/adminresetpwd.js"></script>
+
+</body>
+</html>

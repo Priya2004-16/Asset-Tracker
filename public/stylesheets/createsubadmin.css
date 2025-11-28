@@ -1,0 +1,113 @@
+* { box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      padding: 40px 20px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 850px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #0a2f5c;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      color: #333;
+      font-size: 15px;
+    }
+    input {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-bottom: 18px;
+      font-size: 15px;
+      background-color: #f9f9f9;
+    }
+    input:focus {
+      border-color: #f5a623;
+      outline: none;
+    }
+    button {
+      padding: 12px;
+      background-color: #f5a623;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background-color: #f5a623; }
+    .output {
+      background: #f0f9ff;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 15px;
+      color: #f5a623;
+      border: 1px solid #cce5ff;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      display: none;
+    }
+    .output p::before { content: "✅ "; font-weight: bold; }
+    .user-list { margin-top: 30px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #f5a623;
+      color: white;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    tr:hover { background-color: #f1f7ff; }
+    .action-btn {
+      padding: 5px 10px;
+      margin: 2px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .edit-btn { background: #ffc107; color: #000; }
+    .delete-btn { background: #dc3545; color: #fff; }
+    .save-btn { background: #28a745; color: #fff; }
+    .cancel-btn { background: #6c757d; color: #fff; }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #f5a623;
+      font-weight: bold;
+    }

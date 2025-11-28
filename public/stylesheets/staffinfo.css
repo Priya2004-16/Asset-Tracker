@@ -1,0 +1,106 @@
+ body {
+      font-family: 'Outfit', sans-serif;
+      background: #ffffff;
+      padding: 30px;
+      margin: 0;
+      color: #0a2f5c;
+    }
+    h2 {
+      text-align: center;
+      color: #0a2f5c;
+      margin-bottom: 25px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #fff;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 14px 16px;
+      border: 1px solid #eee;
+      text-align: center;
+      font-size: 15px;
+    }
+    th {
+      background: #ffc107;
+      color: #0a2f5c;
+      font-weight: 700;
+    }
+    tr:nth-child(even) {
+      background: #f9fafc;
+    }
+    tr:hover {
+      background: #f1f6ff;
+      transition: 0.3s;
+    }
+    td a {
+      color: #0a2f5c;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    .action-btn {
+      padding: 6px 12px;
+      margin: 3px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .edit-btn { background: #f7941d; color: #fff; }
+    .delete-btn { background: #dc3545; color: #fff; }
+    .reset-btn { background: #0a2f5c; color: #fff; }
+    .action-btn:hover { opacity: 0.85; }
+
+    #userAssets, #assetDetails {
+      margin-top: 30px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      display: none;
+    }
+    #userAssets h3, #assetDetails h3 {
+      margin-bottom: 15px;
+      color: #0a2f5c;
+      font-weight: 700;
+    }
+    #assetList li {
+      margin: 6px 0;
+      padding: 8px 12px;
+      background: #f9fafc;
+      border-radius: 8px;
+      list-style: none;
+      border-left: 4px solid #f7941d;
+      cursor: pointer;
+    }
+    #assetList li:hover {
+      background: #f1f6ff;
+    }
+    #assetHistoryTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    #assetHistoryTable th, #assetHistoryTable td {
+      border: 1px solid #eee;
+      padding: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+    #assetHistoryTable th {
+      background: #0a2f5c;
+      color: #fff;
+    }
